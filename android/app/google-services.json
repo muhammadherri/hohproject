@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980609906205",
+    "project_id": "hohmanage-44122",
+    "storage_bucket": "hohmanage-44122.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980609906205:android:59a167cb5fc382e9cc78f4",
+        "android_client_info": {
+          "package_name": "com.example.humanity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980609906205-j6n2kmcrl7878hnr9ik58bo6qr9d74qm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6OOlJ_fivUSkRODIhaEoLEGhQZo9gf4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980609906205-j6n2kmcrl7878hnr9ik58bo6qr9d74qm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
