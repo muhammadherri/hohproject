@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:humanity/menu/AdminPage/productadd.dart';
 import 'package:humanity/menu/AdminPage/productsdetail.dart';
 
 class Products extends StatefulWidget {
@@ -24,6 +25,15 @@ class _ProductsState extends State<Products> {
     return Scaffold(
       appBar: AppBar(
         title: Text("product"),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ProductsAdd()),
+          );
+        }
       ),
       body: new FutureBuilder<List>(
           future: getdata_products(),

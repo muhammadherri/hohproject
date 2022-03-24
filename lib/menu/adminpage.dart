@@ -7,29 +7,27 @@ import 'package:http/http.dart' as http;
 import 'package:humanity/menu/AdminPage/products.dart';
 
 class AdminPage extends StatefulWidget {
-AdminPage({this.username});
-final String username;
+  AdminPage({this.username});
+  final String username;
   @override
   _AdminPageState createState() => _AdminPageState();
 }
 
 class _AdminPageState extends State<AdminPage> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("admin"),),
-     body: Center(
-        child: new RaisedButton(
-         onPressed: () {
-  Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => Products()),
-  );
-}
-        ),
+      appBar: AppBar(
+        title: Text("admin"),
       ),
-      );
-    
+      body: Center(
+        child: new RaisedButton(onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Products()),
+          );
+        }),
+      ),
+    );
   }
 }
