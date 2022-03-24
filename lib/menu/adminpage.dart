@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:http/http.dart' as http;
+import 'package:humanity/menu/AdminPage/products.dart';
 
 class AdminPage extends StatefulWidget {
 AdminPage({this.username});
@@ -18,7 +19,16 @@ class _AdminPageState extends State<AdminPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("admin"),),
-     
+     body: Center(
+        child: new RaisedButton(
+         onPressed: () {
+  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => Products()),
+  );
+}
+        ),
+      ),
       );
     
   }

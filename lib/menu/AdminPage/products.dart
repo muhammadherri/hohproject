@@ -23,14 +23,14 @@ class _ProductsState extends State<Products> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("admin"),
+        title: Text("product"),
       ),
       body: new FutureBuilder<List>(
           future: getdata_products(),
           builder: (context, snapshot) {
             if (snapshot.hasError) print(snapshot.error);
             return snapshot.hasData
-                ? new Productslist()
+                ? new Productslist(list: snapshot.data,)
                 : new Center(
                     child: new CircularProgressIndicator(),
                   );
@@ -58,7 +58,7 @@ class Productslist extends StatelessWidget {
                     ))),
             child: Card(
               child: new ListTile(
-                title: new Text(list[i]['categori']),
+                title: Text(list[i]['categori']),
                 subtitle: new Text(list[i]['nama_product']),
               ),
             ),
