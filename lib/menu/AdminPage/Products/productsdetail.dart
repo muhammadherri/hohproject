@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:humanity/menu/AdminPage/Products/productsedit.dart';
 
 class ProductsDetail extends StatefulWidget {
   List list;
@@ -44,7 +45,12 @@ class _ProductsDetailState extends State<ProductsDetail> {
               Padding(padding: const EdgeInsets.only(top: 30)),
               Row(
                 children: [
-                  RaisedButton(onPressed: (){},child: Text("Edit"),color: Colors.green,),
+                  RaisedButton(onPressed: (){
+                     Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ProductsEdit(list: widget.list,index: widget.index,)),
+          );
+                  },child: Text("Edit"),color: Colors.green,),
                   RaisedButton(onPressed: (){},child: Text("Hapus"),color: Colors.red,),
                 ],
               )

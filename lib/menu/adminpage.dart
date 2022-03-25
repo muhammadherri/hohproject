@@ -4,7 +4,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:http/http.dart' as http;
-import 'package:humanity/menu/AdminPage/products.dart';
+
+import 'AdminPage/Products/products.dart';
 
 class AdminPage extends StatefulWidget {
   AdminPage({this.username});
